@@ -1,23 +1,47 @@
 [
   {
-    "skill": "Skill 1",
+    "skill": "Java/Kotlin",
     "selfRating": 5
   },
   {
-    "skill": "Skill 2",
+    "skill": "Spring MVC",
+    "selfRating": 5
+  },
+  {
+    "skill": "Javascript",
     "selfRating": 4
   },
   {
-    "skill": "Skill 3",
+    "skill": "React",
     "selfRating": 3
   },
   {
-    "skill": "Skill 4",
-    "selfRating": 2
+    "skill": "NodeJS",
+    "selfRating": 3
   },
   {
-    "skill": "Skill 4",
-    "selfRating": 1
+    "skill": "Selenium",
+    "selfRating": 4
+  },
+  {
+    "skill": "Nightwatch",
+    "selfRating": 4
+  },
+  {
+    "skill": "Junit",
+    "selfRating": 5
+  },
+  {
+    "skill": "Gatling",
+    "selfRating": 3
+  },
+  {
+    "skill": "Maven",
+    "selfRating": 4
+  },
+  {
+    "skill": "Gradle",
+    "selfRating": 4
   }
 
 ]

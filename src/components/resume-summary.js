@@ -32,7 +32,7 @@ export default function ResumeSummary() {
     <div>
       <Paper className={classes.root}>
         <Typography variant="h5" component="h3">
-          Career Summary
+          Summary
         </Typography>
         <br />
 

@@ -38,7 +38,7 @@ export default function SimpleList() {
 
   return (
     <div className={classes.root}>
-      <List component="nav" aria-label="main mailbox folders">        
+      <List component="nav" aria-label="main mailbox folders">
         <Typography component="p">
           {data.allSkillJson.edges.map(s => (
             <ListItem button>

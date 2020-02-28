@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Your Name Resume`,
-    description: `Resume Starter`,
-    author: `@gatsbyjs`,
+    title: `Naseer Resume`,
+    description: `Full stack software engineer`,
+    author: `@nfmohammed`,
   },
   plugins: [
     `gatsby-transformer-json`,
