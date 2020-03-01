@@ -13,7 +13,7 @@ import Paper from '@material-ui/core/Paper';
 import { useStaticQuery, graphql } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
-  root: {    
+  root: {
     maxWidth: 600,
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(3, 2),
@@ -49,13 +49,13 @@ export default function ResumeExperience() {
 
   return (
     <Paper className={classes.root}>
-       <Typography variant="h5" component="h3">
-          Work Experience
-        </Typography>       
-      <List>          
+      <Typography variant="h5" component="h3">
+        Work Experience
+        </Typography>
+      <List>
         <div>
           {data.allExperienceJson.edges.map(s => (
-              <ListItem alignItems="flex-start">
+            <ListItem alignItems="flex-start">
               <ListItemAvatar>
                 <Avatar className={classes.greenAvatar}>
                   <AssignmentIcon />
@@ -72,22 +72,32 @@ export default function ResumeExperience() {
                       color="textPrimary"
                       paddingBottom={100}
                     >
-                    {s.node.company}                
-                  </Typography>
-                  - {s.node.duration}
-    
-                  <Typography 
+                      {s.node.company}
+                    </Typography>
+                    - {s.node.duration}
+
+                    <Typography
                       variant="body2"
                       color="textPrimary">
-                      {s.node.description}
-                  </Typography>
-                    
+                        <List dense="true">
+                          {s.node.description.map(d =>(
+                            <React.Fragment>
+                            <ListItem button>
+                              <ListItemText>{d}</ListItemText>
+                            </ListItem>
+                            <Divider/>
+                            </React.Fragment>
+                          ))}
+                        </List>
+                      
+                    </Typography>
+
                   </React.Fragment>
                 }
               />
             </ListItem>
           ))}
-        </div>      
+        </div>
       </List>
     </Paper>
   );

@@ -1,15 +1,44 @@
 [
   {
-    "position": "Position",
-    "company": "Company",
-    "duration": "Month Year to Month Year",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "
+    "position": "Software Developer Engineer",
+    "company": "Expedia Groups",
+    "duration": "Jan 2019 to Present",
+    "description": [
+      "Worked in a high paced squad agile model",
+      "Participated in daily stand up meetings",
+      "Worked with product team in designing and implementing customer centric features on Expedia brands",
+      "Participated in discovery of new features during grooming session",
+      "Provided technical advice during planning meetings",
+      "Uncompromised code quality delivered within strict timelines",
+      "Implemented features with A/B test framework and released winning features",
+      "Presented newly released features to stake-holders",
+      "Routinely took up production support responsibility",
+      "Proposed and implemented platform improvement stories",
+      "Coordinated with engineers from other lines of business, on-shore and off-shore",
+      "Actively reviewed PRs for fellow developers",
+      "Monitored system heath dashboards during production support",
+      "Investigated production issues and followed up with quick fixes",
+      "Verified accessibility for the front end features",
+      "Participated in Hackathons and created intelligent solutions to routine problems",
+      "Conducted Tech and/or Behavioral interviews with engineers and college recruits"
+    ]
   },
   {
-    "position": "Position 2",
-    "company": "Company 2",
-    "duration": "Month Year to Month Year",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "
+    "position": "Quality Engineer",
+    "company": "Expedia, Orbitz, Comerica Bank, WrightExpress and Upromise",
+    "duration": "2009 to 2014",
+    "description":  [
+      "5+ years of manual and automation experience with the above clients",
+      "Worked with Selenium frameworks in different languages like Python, Ruby, Java, Groovy and JS",
+      "Worked with BDD frameworks like Cucumber",
+      "Played an active role in creating Nightwatch automation test framework currently used by Expedia",
+      "Standardized and shared quality control best practises with other teams",
+      "Championed quality voice during grooming meetings",
+      "Maintain test data, manual and automation scripts",
+      "Documentation and execution of manual test scripts before release",
+      "Validation of new features after production deployments",
+      "Web and Mobile App testing"
+    ]
   }
 
 ]
