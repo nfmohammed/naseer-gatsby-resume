@@ -1,5 +1,5 @@
-import React from "react"
-
+import React from "react";
+import 'typeface-roboto';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 

@@ -24,9 +24,7 @@ export default function SectionResumeSummaryContact() {
         <Grid item xs={8}>
           <ResumeSummary />
         </Grid>
-        <Grid item xs={4}>
-          <ResumeContact />
-        </Grid>
+        
       </Grid>
     </div>
   );
