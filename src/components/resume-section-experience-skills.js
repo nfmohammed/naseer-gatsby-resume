@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ResumeExperience from './resume-experience';
 import ResumeSkills from './resume-skills';
+import { Container } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,7 +13,9 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     padding: theme.spacing(2),
+    display: "flex",
     textAlign: 'center',
+    justifyContent: "center",
     color: theme.palette.text.secondary,
   },
 }));
@@ -21,16 +24,20 @@ export default function SectionResumeExperienceSkills() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>        
-        <Grid item xs={8}>
+    
+    <Container>
+      <div className={classes.root}>
+      <Grid container justify="flex-end" spacing={3}>
+        <Grid item xs={12} sm={12} md={9} lg={8}>
           <ResumeExperience />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={3} lg={4}>
           <ResumeSkills />
         </Grid>
 
       </Grid>
-    </div>
+      </div>
+    </Container>
+    
   );
 }

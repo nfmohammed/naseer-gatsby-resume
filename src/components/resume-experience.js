@@ -49,7 +49,7 @@ export default function ResumeExperience() {
 
   return (
     <Paper className={classes.root}>
-      <Typography variant="h5" component="h3">
+      <Typography variant="h6" component="h3">
         Work Experience
         </Typography>
       <List>

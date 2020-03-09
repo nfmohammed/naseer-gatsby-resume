@@ -6,18 +6,14 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import Rating from 'material-ui-rating'
 import { useStaticQuery, graphql } from "gatsby"
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '100%',
-    maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
 }));
 
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
-}
 
 export default function SimpleList() {
   const classes = useStyles();
@@ -37,17 +33,15 @@ export default function SimpleList() {
   `)
 
   return (
-    <div className={classes.root}>
-      <List component="nav" aria-label="main mailbox folders">
-        <Typography component="p">
+    <Paper className={classes.root}>
+      <List component="nav">
           {data.allSkillJson.edges.map(s => (
             <ListItem button>
               <ListItemText>{s.node.skill}</ListItemText>
-              <Rating value={s.node.selfRating} readOnly />
+              <Rating value={s.node.selfRating} readOnly/>
             </ListItem>
           ))}
-        </Typography>        
       </List>
-    </div>
+    </Paper>
   );
 }

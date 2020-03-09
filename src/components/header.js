@@ -11,11 +11,13 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
+  },
+  headerStyle: {
+    margin: `0 auto`,
+    maxWidth: 960,
+    padding: `1.45rem 1.0875rem`
   }
 }));
 
@@ -23,6 +25,7 @@ const Header = ({ siteTitle }) => {
   const classes = useStyles();
 
   return (
+    <div className={classes.headerStyle}>
     <AppBar position="static">
       <Toolbar>
         <Typography className={classes.title} variant="h6" noWrap>
@@ -31,6 +34,7 @@ const Header = ({ siteTitle }) => {
         <ResumeContact />
       </Toolbar>
     </AppBar>
+    </div>
   )
 }
 

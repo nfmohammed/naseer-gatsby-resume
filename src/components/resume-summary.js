@@ -1,16 +1,17 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { useStaticQuery, graphql } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(3, 2),
+    margin: '0 auto',
+    padding: `1rem 2rem`,
+    maxWidth: 960
   },
 }));
-
-
 
 export default function ResumeSummary() {
   const classes = useStyles();
@@ -29,12 +30,10 @@ export default function ResumeSummary() {
   `)
 
   return (
-    <div>
-      <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          Summary
+      <Box className={classes.root}>
+        <Typography variant="h6" component="h3">
+          About Me
         </Typography>
-        <br />
 
         <Typography component="p">
           {data.allSummaryJson.edges.map(s => (
@@ -43,10 +42,7 @@ export default function ResumeSummary() {
             </div>
           ))}
         </Typography>
-  
-      </Paper>
-
-    </div>
+      </Box>
   );
 }
 
