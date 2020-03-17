@@ -8,9 +8,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { makeStyles } from '@material-ui/core/styles';
 
 import Header from "./header"
 import "./layout.css"
+
+const useStyles = makeStyles(theme => ({
+  layoutStyle: {
+    margin: `0 auto`,
+    maxWidth: 960,
+    padding: `1.45rem 1.0875rem`
+  }
+}));
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,17 +31,13 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  const classes = useStyles();
   return (
-    <>
+    
+    <div className={classes.layoutStyle}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <footer style={{ paddingTop: 20 }}>
-        © {new Date().getFullYear()}, Built with
-          {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </>
+    </div>
   )
 }
 

@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Typography from '@material-ui/core/Typography';
 import Rating from 'material-ui-rating'
 import { useStaticQuery, graphql } from "gatsby"
 import Paper from '@material-ui/core/Paper';
@@ -38,7 +37,6 @@ export default function SimpleList() {
           {data.allSkillJson.edges.map(s => (
             <ListItem button>
               <ListItemText>{s.node.skill}</ListItemText>
-              <Rating value={s.node.selfRating} readOnly/>
             </ListItem>
           ))}
       </List>
