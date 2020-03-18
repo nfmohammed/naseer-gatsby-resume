@@ -12,8 +12,7 @@ import Badge from '@material-ui/core/Badge';
 const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 360,
-    display: 'flex'
-  },
+  }
 }));
 
 const icons = {
@@ -42,16 +41,16 @@ export default function ResumeContact() {
   `)
 
   return (
-      <div className={classes.root}>
-            {data.allContactJson.edges.map(s => (
-              <Link href={s.node.href} underline="hover" rel="noopener noreferrer" target="_blank" color="inherit">
-                  <IconButton color="inherit">
-                    <Badge color="secondary">
-                {icons[s.node.type]}
+    <div className={classes.root}>
+      {data.allContactJson.edges.map(s => (
+        <Link href={s.node.href} underline="hover" rel="noopener noreferrer" target="_blank" color="inherit">
+          <IconButton color="inherit">
+            <Badge color="secondary">
+              {icons[s.node.type]}
             </Badge>
           </IconButton>
-              </Link>
-            ))}
-      </div>
+        </Link>
+      ))}
+    </div>
   );
 }
