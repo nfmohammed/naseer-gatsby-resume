@@ -11,6 +11,9 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import { green } from '@material-ui/core/colors';
 import Paper from '@material-ui/core/Paper';
 import { useStaticQuery, graphql } from "gatsby"
+import createBreakpoints from "@material-ui/core/styles/createBreakpoints";
+
+const breakpoints = createBreakpoints({});
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,11 +24,17 @@ const useStyles = makeStyles(theme => ({
   inline: {
     display: 'inline',
   },
-  greenAvatar: {
-    margin: 10,
-    color: '#fff',
-    backgroundColor: green[500],
+  avatarItem: {
+    display: "none",
+    [breakpoints.up("md")]: {
+      display: "inline"
+    }
   },
+  greenAvatar: {
+      margin: 10,
+      color: '#fff',
+      backgroundColor: green[500]
+  }
 }));
 
 export default function ResumeExperience() {
@@ -56,18 +65,26 @@ export default function ResumeExperience() {
         <div>
           {data.allExperienceJson.edges.map(s => (
             <ListItem alignItems="flex-start">
-              <ListItemAvatar>
+              <ListItemAvatar className={classes.avatarItem}>
                 <Avatar className={classes.greenAvatar}>
                   <AssignmentIcon />
                 </Avatar>
               </ListItemAvatar>
               <ListItemText
-                primary={s.node.position}
+                primary=
+                  {<Typography
+                      component="span"
+                      variant="h6"
+                    >
+                  {s.node.position}
+                  </Typography>
+
+                }
                 secondary={
                   <React.Fragment>
                     <Typography
                       component="span"
-                      variant="body2"
+                      variant="body1"
                       className={classes.inline}
                       color="textPrimary"
                       paddingBottom={100}

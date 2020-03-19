@@ -1,51 +1,63 @@
 [
   {
-    "skill": "Java/Kotlin",
-    "selfRating": 5
+    "skill": "Java/Kotlin"
   },
   {
-    "skill": "Spring MVC",
-    "selfRating": 5
+    "skill": "Spring MVC"
   },
   {
-    "skill": "Rest/GraphQL",
-    "selfRating": 5
+    "skill": "Rest/GraphQL"
   },
   {
-    "skill": "Javascript",
-    "selfRating": 4
+    "skill": "Javascript"
   },
   {
-    "skill": "React",
-    "selfRating": 3
+    "skill": "React"
   },
   {
-    "skill": "NodeJS",
-    "selfRating": 3
+    "skill": "Amazon AWS"
   },
   {
-    "skill": "Selenium",
-    "selfRating": 4
+    "skill": "Docker"
   },
   {
-    "skill": "Nightwatch",
-    "selfRating": 4
+    "skill": "Splunk"
   },
   {
-    "skill": "Junit",
-    "selfRating": 5
+    "skill": "Grafana"
   },
   {
-    "skill": "Gatling",
-    "selfRating": 3
+    "skill": "Pagerduty"
   },
   {
-    "skill": "Maven",
-    "selfRating": 4
+    "skill": "Git"
   },
   {
-    "skill": "Gradle",
-    "selfRating": 4
+    "skill": "Rest/GraphQL"
+  },
+  {
+    "skill": "SQL"
+  },
+  {
+    "skill": "NodeJS"
+  },
+  {
+    "skill": "Selenium"
+  },
+  {
+    "skill": "Nightwatch"
+  },
+  {
+    "skill": "Junit"
+  },
+  {
+    "skill": "Gatling"
+  },
+  {
+    "skill": "Maven"
+  },
+  {
+    "skill": "Gradle"
   }
 
 ]
