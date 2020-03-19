@@ -1,63 +1,30 @@
 [
   {
-    "skill": "Java/Kotlin"
+    "category": "Programming",
+    "info": ["Java", "Kotlin", "Scala", "Javascript", "React", "NodeJS"]
   },
   {
-    "skill": "Spring MVC"
+    "category": "Cloud",
+    "info": ["Amazon AWS", "Docker", "EC2", "ECS", "Load Balancer", "IAM"]
   },
   {
-    "skill": "Rest/GraphQL"
+    "category": "Frameworks",
+    "info": ["Spring boot", "Junit", "Jest", "Nightwatch", "Gatling", "Mockito", "Selenium"]
   },
   {
-    "skill": "Javascript"
+    "category": "Data",
+    "info": ["Rest", "GraphQL", "Swagger", "Postman"]
   },
   {
-    "skill": "React"
+    "category": "Build Tools",
+    "info": ["Maven", "Gradle", "Grunt"]
   },
   {
-    "skill": "Amazon AWS"
+    "category": "Database",
+    "info": ["MongoDB", "SQL Server", "Oracle"]
   },
   {
-    "skill": "Docker"
-  },
-  {
-    "skill": "Splunk"
-  },
-  {
-    "skill": "Grafana"
-  },
-  {
-    "skill": "Pagerduty"
-  },
-  {
-    "skill": "Git"
-  },
-  {
-    "skill": "Rest/GraphQL"
-  },
-  {
-    "skill": "SQL"
-  },
-  {
-    "skill": "NodeJS"
-  },
-  {
-    "skill": "Selenium"
-  },
-  {
-    "skill": "Nightwatch"
-  },
-  {
-    "skill": "Junit"
-  },
-  {
-    "skill": "Gatling"
-  },
-  {
-    "skill": "Maven"
-  },
-  {
-    "skill": "Gradle"
+    "category": "Other Tools",
+    "info": ["Jenkins", "Git", "Bash", "Splunk", "Grafana", "Pagerduty"]
   }
-
 ]
