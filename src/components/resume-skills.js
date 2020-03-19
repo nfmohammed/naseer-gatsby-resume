@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Rating from 'material-ui-rating'
 import { useStaticQuery, graphql } from "gatsby"
 import Paper from '@material-ui/core/Paper';
 import Card from "@material-ui/core/Card";
