@@ -1,0 +1,1 @@
+{"errors":[{"message":"Cannot query field \"allSkillJson\" on type \"Query\". Did you mean \"allDataJson\", \"allSummaryJson\", or \"allContactJson\"?","locations":[{"line":2,"column":3}]}]}
