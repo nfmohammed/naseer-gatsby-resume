@@ -66,8 +66,8 @@ export default function ResumeExperience() {
           {data.allExperienceJson.edges.map(s => (
             <ListItem alignItems="flex-start">
               <ListItemAvatar className={classes.avatarItem}>
-                <Avatar className={classes.greenAvatar}>
-                  <AssignmentIcon />
+                <Avatar className={classes.greenAvatar} src="static/images/expedia-logo.jpg">
+                  
                 </Avatar>
               </ListItemAvatar>
               <ListItemText
